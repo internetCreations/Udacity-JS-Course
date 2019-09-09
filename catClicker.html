@@ -1,20 +1,28 @@
-<script>
-    var numClicks = 0; 
-    function click() {
-        alert('test'); 
-        numClicks = numClicks + 1;
-        document.getElementById("clickCounter").innerHTML = numClicks; 
-    }
+<html> 
+    <head> 
+        <script>
+            
+            function click() {
+                var numClicks = 0;
+                 
+                numClicks = numClicks + 1;
+                alert(numClicks);
+                document.getElementById("clickCounter").innerHTML = numClicks; 
+            }
 
-</script>
+        </script>
+    </head>
 
-<h1>Cat Clicker</h1>
+    <body onload="click()"> 
+        <!-- <h1>Cat Clicker</h1>-->
 
-Click me right <b>Moew</b>
-<button onclick='click()' >Click Me</button>
+        Click me right <b>Moew</b>
+        <button onclick='click()' >Click Me</button>
 
-<br/>
-<br/>
+        <br/>
+        <br/>
 
-# of Clicks:
-<p id='clickCounter'/>
+        # of Clicks:
+        <p id='clickCounter'/>
+    </body>
+</html>
