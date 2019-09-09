@@ -1,0 +1,20 @@
+<script>
+    var numClicks = 0; 
+    function click() {
+        alert('test'); 
+        numClicks = numClicks + 1;
+        document.getElementById("clickCounter").innerHTML = numClicks; 
+    }
+
+</script>
+
+<h1>Cat Clicker</h1>
+
+Click me right <b>Moew</b>
+<button onclick='click()' >Click Me</button>
+
+<br/>
+<br/>
+
+# of Clicks:
+<p id='clickCounter'/>
